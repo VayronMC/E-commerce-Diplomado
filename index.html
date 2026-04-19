@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce VMC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>E-Commerce VMC: Los mejores productos del comercio</h1>
+    </header>
+
+    <main>
+        <section class="product-form-section">
+            <h2>Agregar producto</h2>
+            <form id="product-form">
+                <label for="product-img">Imagen del producto</label>
+                <input type="text" id="product-img" placeholder="URL de la imagen (Ej: https://...)" required>
+
+                <label for="product-name">Nombre del producto</label>
+                <input type="text" id="product-name" placeholder="Poner el nombre del producto" required>
+
+                <label for="product-description">Descripción</label>
+                <input type="text" id="product-description" placeholder="Detalle breve de qué es el producto" required>
+
+                <label for="product-price">Precio</label>
+                <input type="number" id="product-price" placeholder="Precio numérico" required>
+
+                <label for="product-coupon">Cupón de descuento</label>
+                <input type="text" id="product-coupon" placeholder="Código del cupón (opcional)">
+
+                <button type="submit">Guardar producto</button>
+            </form>
+        </section>
+
+        <section class="product-list-section">
+            <h2>Productos en E-Commerce VMC</h2>
+            <div id="product-list">No hay productos aún.</div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
